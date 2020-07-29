@@ -3,6 +3,7 @@
 //=========================================================
 let express = require("express");
 let fs = require("fs");
+let path = require("path");
 
 //=========================================================
 //Express Config
@@ -21,8 +22,8 @@ app.use(express.json());
 //=========================================================
 //ROUTER
 //=========================================================
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./Develop/routes/apiRoutes")(app);
+require("./Develop/routes/htmlRoutes")(app);
 
 //=========================================================
 //Listener
