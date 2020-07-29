@@ -2,7 +2,7 @@
 //Load Data
 //====================================
 
-
+let noteData = require("../data/notesData");
 
 //=====================================
 //Routing
