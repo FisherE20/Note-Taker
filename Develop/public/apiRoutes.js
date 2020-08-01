@@ -42,9 +42,9 @@ module.exports = function (app){
         saveNote.push(newNote);
         
         //Write the new note 
-        fs.writeFile(__dirname, "../db/db.json", Json.stringify(saveNote));
-        console.log("Congradulations! Your naote has been saved");
-        res.json(saveNote);
+        fs.writeFile(__dirname, "../db/db.json", Json.stringify(db.json));
+        console.log("Congradulations! Your note has been saved");
+        res.json(db);
     });
 
 
@@ -52,7 +52,7 @@ module.exports = function (app){
     app.delete("/api/notes/:id", function(res,req){
         let saveNote = JSON.parse(fs.readFileSync(__dirname, "../db/db.json", "utf8"));
         let noteId = req.params.id;
-        let newId = 0;
+        
 
         console.log('Note: ${noteId successfully removed');
         saveNote = saveNote.filter(currNote => {
