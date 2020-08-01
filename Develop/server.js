@@ -5,6 +5,7 @@ let express = require("express");
 let fs = require("fs");
 let path = require("path");
 
+
 //=========================================================
 //Express Config
 //=========================================================
@@ -12,18 +13,19 @@ let path = require("path");
 //Tell node that we are creating an "express" server
 let app = express();
 //Sets an inital port. 
-let PORT = 6000;
-console.log("Successfully opened port 6000");
+let PORT = 3036;
+console.log("Successfully opened port" + PORT);
 
 //Sets up the Express app to handle data parsing
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(express.static("public"));
 
 //=========================================================
 //ROUTER
 //=========================================================
-require("./Develop/routes/apiRoutes")(app);
-require("./Develop/routes/htmlRoutes")(app);
+require("./public/apiRoutes.js")(app);
+require("./public/htmlRoutes.js")(app);
 
 //=========================================================
 //Listener
