@@ -1,5 +1,5 @@
 # Note-Taker
-![Project Image](Images/Note-taker.png)
+![Project Image](images/Note-taker.png)
 
 >Help keep yourself organized! 
 
