@@ -32,7 +32,8 @@ module.exports = function (app){
     });
 
     //Create new note
-    app.post("api/notes", function(req,res) { 
+    app.post("/api/notes", function(req,res) { 
+        console.log("Inside POST\n", req.body);
         let saveNote = JSON.parse(fs.readFileSync(__dirname, "../db/db.json"));
         let newNote = req.body;
         let id =(saveNote.length).toString();
