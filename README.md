@@ -1,7 +1,7 @@
 # Note-Taker
-![Project Image](project-image-url)
+![Project Image](Images/Note-taker.png)
 
->Short Project Blurb
+>Help keep yourself organized! 
 
 ---
 
@@ -16,7 +16,7 @@
 ---
 
 ## Description
-What is this project about. Who is the User? What is the purpose of this application? 
+This application allows the user to enter any notes they would like to keep track of to stay organized and delet them as they complete each task.
 
 #### Technologies
 
@@ -32,9 +32,12 @@ What is this project about. Who is the User? What is the purpose of this applica
 
 
 #### API Reference
+/api/notes
 
-```html
-    <p>dummy code</p>
+```npm/ node
+    npm i
+
+    node server.js
 ```
 [Back To The Top](#Note-Taker)
 
