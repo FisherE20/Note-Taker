@@ -13,7 +13,7 @@ let path = require("path");
 //Tell node that we are creating an "express" server
 let app = express();
 //Sets an inital port. 
-let PORT = 3036;
+let PORT = 3301;
 console.log("Successfully opened port" + PORT);
 
 //Sets up the Express app to handle data parsing
